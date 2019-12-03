@@ -4818,8 +4818,12 @@ between column types.}%
 \bgroup\par\vskip\IEEEtitletopspace\vskip\IEEEtitletopspaceextra{\centering%
    \vskip0.2em{\Huge\ifCLASSOPTIONtransmag\bfseries\LARGE\fi\@IEEEcompsoconly{\sffamily}\@IEEEcompsocconfonly{\normalfont\normalsize\vskip 2\@IEEEnormalsizeunitybaselineskip
    \LARGE}\@IEEEcompsocnotconfonly{\vskip
-   0.75\@IEEEnormalsizeunitybaselineskip}\@title\par{\vskip
-   0.75\@IEEEnormalsizeunitybaselineskip}\large--\hspace{1ex}\ISASEsubtitle\hspace{1ex}--}\relax
+   0.75\@IEEEnormalsizeunitybaselineskip}\@title\par{\vskip 0.75\@IEEEnormalsizeunitybaselineskip}%
+   \@ifundefined{ISASEsubtitle}
+        {}{%
+        \large--\hspace{1ex}\ISASEsubtitle\hspace{1ex}--%
+        }
+   }\relax%
    \@IEEEcompsocnotconfonly{\vskip 0.5\@IEEEnormalsizeunitybaselineskip}\vskip0.0em\par%
    % V1.6 handle \author differently if in conference mode
    \ifCLASSOPTIONconference%
