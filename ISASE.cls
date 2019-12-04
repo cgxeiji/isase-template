@@ -201,7 +201,7 @@
 
 
 % ISASE Formatting
-\newcommand*{\ISASEtype}[1]{\def\ISASEtypeName{\bfseries\textsf{#1}}}
+\newcommand*{\ISASEtype}[1]{\def\ISASEtypeName{\bfseries#1}}
 \newcommand*{\subtitle}[1]{\def\ISASEsubtitle{#1}}
 
 \newcount\ISASE@mark@count
